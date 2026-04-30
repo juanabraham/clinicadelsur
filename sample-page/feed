@@ -8,7 +8,7 @@
 <channel>
 	<title>
 	Comentarios en: Sample Page	</title>
-	<atom:link href="/sample-page/feed/" rel="self" type="application/rss+xml" />
+	<atom:link href="/clinicadelsur/sample-page/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Clínica dental en Puerto Varas</description>
 	<lastBuildDate>Tue, 13 Aug 2019 19:52:02 +0000</lastBuildDate>
