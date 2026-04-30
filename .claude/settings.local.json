@@ -28,7 +28,16 @@
       "Bash(curl -sL https://juanabraham.github.io/clinicadelsur/)",
       "Bash(curl -sLo /dev/null -w '%{http_code}' https://juanabraham.github.io/clinicadelsur/__TRACKED_VAR__)",
       "Bash(git -c user.email=juanantonio.abraham@gmail.com -c user.name=juanabraham commit -m \"Fix root-relative URLs to include /clinicadelsur subpath\")",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(MSYS_NO_PATHCONV=1 gh api repos/juanabraham/clinicadelsur/pages/builds/latest --jq '{status, commit, duration}')",
+      "Bash(curl -sI http://localhost:4321/clinicadelsur/)",
+      "Bash(curl -sLo /dev/null -w \"%{http_code}  %{content_type}\\\\n\" http://localhost:4321/clinicadelsur/wp-content/uploads/2023/01/Logo-clinica-del-sur-2023.png)",
+      "Bash(curl -sIL http://localhost:4321/)",
+      "Bash(curl -sLo /dev/null -w \"%{http_code}\\\\n\" http://localhost:4321/clinicadelsur/contacto/)",
+      "Bash(grep -oiE \"\\(alianza|christel|frese|misionera|strip\\)[^<]{0,80}\" contacto/index.html)",
+      "Bash(grep -rohE \"\\(\\\\+?56\\)?\\\\s*\\\\\\(?6?5\\\\\\)?\\\\s*2?\\\\s*\\\\d{2,3}\\\\s*\\\\d{3,4}\\\\s*\\\\d{0,4}\" --include=\"*.html\")",
+      "Bash(curl -sLo /dev/null -w '%{http_code}' http://localhost:4321/clinicadelsur/__TRACKED_VAR__)",
+      "Bash(git -c user.email=juanantonio.abraham@gmail.com -c user.name=juanabraham co)"
     ]
   }
 }
