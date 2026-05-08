@@ -41,7 +41,8 @@
       "Bash(grep -oE \"[a-z]*\\\\.google[^\\\\\"' ]{0,200}\" contacto/index.html)",
       "Bash(grep -oE 'maps[^\"\\\\\\\\]{0,80}' index.html)",
       "Bash(grep -oE 'maps\\\\\\\\/[^\"]{0,80}' index.html)",
-      "Bash(git -c user.email=juanantonio.abraham@gmail.com -c user.name=juanabraham commit -m 'Update map link to Frutillar address and remove Clínicas menu *)"
+      "Bash(git -c user.email=juanantonio.abraham@gmail.com -c user.name=juanabraham commit -m 'Update map link to Frutillar address and remove Clínicas menu *)",
+      "Bash(git commit -m 'Fix broken footer links and add patient pages *)"
     ]
   }
 }
